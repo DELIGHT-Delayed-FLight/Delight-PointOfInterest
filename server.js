@@ -2,8 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3000;
 const yelp = require('yelp-fusion');
+const dotenv = require('dotenv').config()
 
-const client = yelp.client('S-mzDAG_qjwp9LyX9z2tH70ntT9U5-APpnd8tsL9jbFcOUBo-PnsRf6Q-LxvBxLhr8zeramerItRx3LQz3zT_OALF62bXAVNm84YXmvDl53EtIsb-uQBpaBOipJIXnYx');
+const client = yelp.client(process.env.API);
 
 
 app.get('/restaurants', (req, res) => {
@@ -35,4 +36,3 @@ app.get('/restaurants', (req, res) => {
 
 
 app.listen(port, () => console.log(`DELIGHT app listening on port ${port}!`));
-
