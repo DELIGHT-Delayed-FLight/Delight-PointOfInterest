@@ -1,0 +1,26 @@
+{
+  "name": "Delight-PointOfInterest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DELIGHT-Delayed-FLight/Delight-PointOfInterest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DELIGHT-Delayed-FLight/Delight-PointOfInterest/issues"
+  },
+  "homepage": "https://github.com/DELIGHT-Delayed-FLight/Delight-PointOfInterest#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "yelp-fusion": "^3.0.0"
+  }
+}
