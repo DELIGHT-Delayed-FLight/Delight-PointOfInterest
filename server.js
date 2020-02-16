@@ -6,7 +6,7 @@ const yelp = require('yelp-fusion');
 const client = yelp.client('S-mzDAG_qjwp9LyX9z2tH70ntT9U5-APpnd8tsL9jbFcOUBo-PnsRf6Q-LxvBxLhr8zeramerItRx3LQz3zT_OALF62bXAVNm84YXmvDl53EtIsb-uQBpaBOipJIXnYx');
 
 
-app.get('/home', (req, res) => {
+app.get('/restaurants', (req, res) => {
    let business = [];
    client.search({
       categories: 'Restaurants',
