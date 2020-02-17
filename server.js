@@ -4,7 +4,7 @@ const port = 3000;
 const yelp = require('yelp-fusion');
 const dotenv = require('dotenv').config()
 
-const client = yelp.client(process.env.API);
+const client = yelp.client(process.env.REACT_APP_API_KEY);
 
 
 app.get('/restaurants', (req, res) => {
