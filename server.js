@@ -2,10 +2,11 @@ const express = require('express')
 const app = express()
 const port = 3000;
 const yelp = require('yelp-fusion');
-const dotenv = require('dotenv').config()
+require('dotenv').config()
+const API_KEY = process.env.API_KEY;
 
-const client = yelp.client(process.env.REACT_APP_API_KEY);
 
+const client = yelp.client(API_KEY);
 
 app.get('/restaurants', (req, res) => {
    let business = [];
